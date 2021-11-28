@@ -24,4 +24,6 @@ def carddraw():
             cards.append([face, suit])
     card = random.choice(cards)
     return card
-print(carddraw())
+
+if __name__ == "__main__":
+    print(carddraw())
