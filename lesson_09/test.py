@@ -14,28 +14,28 @@ class Car:
 
 
     def speed_increase(self):
-        self.speed = (self.speed) + 60
+        self.speed = (self.speed) + 10
         print(f'Speed max : {self.speed}')
 
     def speed_decrease(self):
-        self.speed = (self.speed) - 10
+        self.speed = (self.speed) - 5
         print(f'Speed decrease : {self.speed}')
 
     def stop(self):     # Если скорость равна 0 , то revers показывает тоже ноль
-        self.speed = 10
+        self.speed = 0
         print(f"Stop: {self.speed}")
 
     def speed_display(self):
         print(f"Display speed: {self.speed}")
 
     def revers(self):
-
         self.speed = -(self.speed)
         print(f'Revers Speed: {self.speed}')
 
 
 if __name__ == "__main__":
     cars = Car("BMW", 540, 2001, 0)
+
     cars.speed_increase()
     cars.speed_decrease()
     cars.stop()
@@ -44,12 +44,4 @@ if __name__ == "__main__":
 
     print((cars.make), (cars.model), (cars.year), (cars.speed))
 
-
-    cars = Car("Mazda", "RX8", 2010, 0)
-    cars.speed_increase()
-    cars.speed_decrease()
-    cars.stop()
-    cars.speed_display()
-    cars.revers()
-
-
+    cars = Car("Mazda", 540, 2001, 0)
