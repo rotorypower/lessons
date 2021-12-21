@@ -29,7 +29,7 @@ class Circle(Figure):
         self.radius_length = radius_length
 
     def area_circle(self):
-        return math.pi * self.radius_length
+        return round((math.pi * self.radius_length),2)
 
     def perimetr_circle(self):
         return 2 * math.pi * self.radius_length
@@ -44,10 +44,10 @@ class Triangle(Figure):
         self.p = (self.point_a + self.point_b + self.point_c) / 2
 
     def perimetr_trian(self):  # периметр треугольника
-        return self.point_a + self.point_b + self.point_c
+        return round((self.point_a + self.point_b + self.point_c), 2)
 
     def area_trian(self):
-        return math.sqrt(self.p * (self.p - self.point_a) * (self.p - self.point_b) * (self.p - self.point_c))
+        return round(math.sqrt(self.p * (self.p - self.point_a) * (self.p - self.point_b) * (self.p - self.point_c)),2)
 
 
 #Square (атрибуты: две точки, методы: нахождение площади и периметра).
